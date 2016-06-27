@@ -12,6 +12,8 @@
 		FAF21C4A1D213E2700467C82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF21C481D213E2700467C82 /* Main.storyboard */; };
 		FAF21C4C1D213E2700467C82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAF21C4B1D213E2700467C82 /* Assets.xcassets */; };
 		FAF21C4F1D213E2700467C82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF21C4D1D213E2700467C82 /* LaunchScreen.storyboard */; };
+		FAF21C571D21409700467C82 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF21C561D21409700467C82 /* MapKit.framework */; };
+		FAF21C591D21458300467C82 /* Capital.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF21C581D21458300467C82 /* Capital.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		FAF21C4B1D213E2700467C82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAF21C4E1D213E2700467C82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAF21C501D213E2700467C82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAF21C561D21409700467C82 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		FAF21C581D21458300467C82 /* Capital.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Capital.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF21C571D21409700467C82 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +43,7 @@
 		FAF21C381D213E2600467C82 = {
 			isa = PBXGroup;
 			children = (
+				FAF21C561D21409700467C82 /* MapKit.framework */,
 				FAF21C431D213E2700467C82 /* Capital Cities */,
 				FAF21C421D213E2600467C82 /* Products */,
 			);
@@ -56,6 +62,7 @@
 			children = (
 				FAF21C441D213E2700467C82 /* AppDelegate.swift */,
 				FAF21C461D213E2700467C82 /* ViewController.swift */,
+				FAF21C581D21458300467C82 /* Capital.swift */,
 				FAF21C481D213E2700467C82 /* Main.storyboard */,
 				FAF21C4B1D213E2700467C82 /* Assets.xcassets */,
 				FAF21C4D1D213E2700467C82 /* LaunchScreen.storyboard */,
@@ -97,6 +104,11 @@
 					FAF21C401D213E2600467C82 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 2ZSXJFDZ3N;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -138,6 +150,7 @@
 			files = (
 				FAF21C471D213E2700467C82 /* ViewController.swift in Sources */,
 				FAF21C451D213E2700467C82 /* AppDelegate.swift in Sources */,
+				FAF21C591D21458300467C82 /* Capital.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
